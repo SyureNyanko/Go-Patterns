@@ -28,3 +28,11 @@ type Builder interface {
 
 ```
 - interfaceを満たすstructをいくつか用意し、それに対応するファクトリを用意しておく
+
+
+### Object Pool
+- オブジェクトの初期化に時間がかかるオブジェクトはあらかじめ生成して、chanのキューにいれておく
+- 使い終わったら戻す
+
+### Singleton
+- Global変数で定義してsync.Doで初期化関数を実行
