@@ -3,7 +3,7 @@ http://tmrts.com/go-patterns/ の写経
 
 ## Creation Patterns
 ### Builder
-- オブジェクトの生成家庭を抽象化する
+- オブジェクトの生成過程を抽象化する
 ```
 type Builder interface {
 	Paint(Color) Builder
